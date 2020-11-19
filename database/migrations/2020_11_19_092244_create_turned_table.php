@@ -13,7 +13,7 @@ class CreateTurnedTable extends Migration
      */
     public function up()
     {
-        Schema::create('turned', function (Blueprint $table) {
+        Schema::create('turneds', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('id_borrower')->unsigned();
             $table->integer('id_borrowed')->unsigned();
@@ -29,7 +29,7 @@ class CreateTurnedTable extends Migration
     public function down()
     {
         Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('turned');
+        Schema::dropIfExists('turneds');
         Schema::enableForeignKeyConstraints();
     }
 }

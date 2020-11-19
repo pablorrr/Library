@@ -13,7 +13,7 @@ class CreateBookTable extends Migration
      */
     public function up()
     {
-        Schema::create('book', function (Blueprint $table) {
+        Schema::create('books', function (Blueprint $table) {
             $table->bigIncrements('id_book');
             $table->string('title', 32)->unique();
             $table->string('author', 32)->unique();
@@ -28,7 +28,7 @@ class CreateBookTable extends Migration
      */
     public function down()
     {   Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('book');
+        Schema::dropIfExists('books');
         Schema::enableForeignKeyConstraints();
     }
 }

@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0709dac6-e340-4be4-a300-ef619d7eb748" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_19_092109_create_book_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_19_092109_create_book_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_19_092155_create_borrowed_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_19_092155_create_borrowed_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_19_092222_create_borrower_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_19_092222_create_borrower_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_19_092244_create_turned_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_19_092244_create_turned_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,10 +118,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -133,7 +140,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605776129956</updated>
-      <workItem from="1605776131001" duration="2900000" />
+      <workItem from="1605776131001" duration="9592000" />
     </task>
     <servers />
   </component>
@@ -141,9 +148,33 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2472" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605782806204">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2472" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605782806204" />
     <state x="2505" y="111" key="CommitChangelistDialog2" timestamp="1605776432787">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2505" y="111" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605776432787" />
+    <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1605782830484">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="198" height="457" key="HiddenNamespacesPopup/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605782830484" />
+    <state x="2381" y="185" key="SettingsEditor" timestamp="1605784383493">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2381" y="185" key="SettingsEditor/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605784383493" />
+    <state x="2717" y="397" width="316" height="285" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605783179276">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2717" y="397" width="316" height="285" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605783179276" />
+    <state x="2676" y="342" width="408" height="391" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1605782885500">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2676" y="342" width="408" height="391" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605782885500" />
+    <state x="2693" y="178" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605783011085">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2693" y="178" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605783011085" />
   </component>
 </project>

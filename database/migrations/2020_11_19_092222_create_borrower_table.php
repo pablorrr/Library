@@ -13,7 +13,7 @@ class CreateBorrowerTable extends Migration
      */
     public function up()
     {
-        Schema::create('borrower', function (Blueprint $table) {
+        Schema::create('borrowers', function (Blueprint $table) {
             $table->bigIncrements('id_borrower');
             $table->string('imie', 32)->unique();
             $table->string('nazwisko', 32)->unique();
@@ -29,7 +29,7 @@ class CreateBorrowerTable extends Migration
     public function down()
     {
         Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('borrower');
+        Schema::dropIfExists('borrowers');
         Schema::enableForeignKeyConstraints();
     }
 }

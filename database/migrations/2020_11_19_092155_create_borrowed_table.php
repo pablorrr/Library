@@ -13,7 +13,7 @@ class CreateBorrowedTable extends Migration
      */
     public function up()
     {
-        Schema::create('borrowed', function (Blueprint $table) {
+        Schema::create('borroweds', function (Blueprint $table) {
             $table->bigIncrements('id_borrowed');
             $table->integer('id_borrower')->unsigned();
             $table->integer('id_book')->unsigned();
@@ -29,7 +29,7 @@ class CreateBorrowedTable extends Migration
     public function down()
     {
         Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('borrowed');
+        Schema::dropIfExists('borroweds');
         Schema::enableForeignKeyConstraints();
     }
 }

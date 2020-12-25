@@ -12,5 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/borrowed', function () {
+    return view('borrowed');
+
+});
+
+Route::get('/borrower', function () {
+    return view('borrower');
+});
+
+Route::get('/turned', function () {
+    return view('turned');
 });

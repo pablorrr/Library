@@ -54,40 +54,30 @@
     </div>
 </div>
 
-<div class="container-fluid bg-3 text-center">
+<div class="container-fluid">
 
     <div class="row">
-        <table class="table">
-            <thead class="thead-dark">
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">id borrowed</th>
-                <th scope="col">id borrower</th>
-                <th scope="col">id book</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="col-md-6 col-md-offset-3">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">id borrowed</th>
+                    <th scope="col">id borrower</th>
+                    <th scope="col">id book</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach($borrowed as $singleBorrowed)
+                    <tr>
+                        <th scope="row">{{$singleBorrowed->id_borrowed}}</th>
+                        <td>{{$singleBorrowed->id_borrower}}</td>
+                        <td>{{$singleBorrowed->id_book}}</td>
 
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
+        </div>
 
     </div>
 </div>

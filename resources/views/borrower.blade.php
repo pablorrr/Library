@@ -54,46 +54,40 @@
     </div>
 </div>
 
-<div class="container-fluid bg-3 text-center">
+<div class="container-fluid">
 
     <div class="row">
-        <table class="table">
-            <thead class="thead-dark">
-            <tr>
-                <th scope="col">id</th>
-                <th scope="col">Imie</th>
-                <th scope="col">Nazwisko</th>
+        <div class="col-md-6 col-md-offset-3">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Imie</th>
+                    <th scope="col">Nazwisko</th>
 
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td></td>
-                <td></td>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach($borrower as $singleBorrower)
+                    <tr>
+                        <th scope="row">{{$singleBorrower->id_borrower}}</th>
+                        <td>{{$singleBorrower->imie}}</td>
+                        <td>{{$singleBorrower->nazwisko}}</td>
 
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td></td>
-                <td></td>
+                    </tr>
+                @endforeach
 
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td></td>
-                <td></td>
-
-            </tr>
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <br>
+</div>
+<br>
 
 
-    <footer class="container-fluid text-center">
-        <p>Footer Text</p>
-    </footer>
+<footer class="container-fluid text-center">
+    <p>Footer Text</p>
+</footer>
 
 </body>
 </html>

@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Turned;
 
 class TurnedController extends Controller
 {
-    public function index(){
-        return view('turned');
+    public function index()
+    {
+        $turned = Turned::all();
+        return view('turned', ['turned' => $turned]);
     }
 }

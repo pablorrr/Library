@@ -11,19 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'BookController@index')->name('book');
 
-Route::get('/borrowed', function () {
-    return view('borrowed');
 
-});
+Route::get('/borrowed', 'BorrowedController@index')->name('borrowed');
 
-Route::get('/borrower', function () {
-    return view('borrower');
-});
 
-Route::get('/turned', function () {
-    return view('turned');
-});
+Route::get('/borrower', 'BorrowerController@index')->name('borrower');
+
+
+Route::get('/turned', 'TurnedController@index')->name('turned');
+

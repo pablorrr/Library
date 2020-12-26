@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="89c886be-f3af-41cc-bf37-e3c5374215f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/book.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/book.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/borrowed.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/borrowed.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/borrower.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/borrower.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/turned.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/turned.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +151,7 @@
       <updated>1608900347984</updated>
       <workItem from="1608900350653" duration="2832000" />
       <workItem from="1608909162381" duration="8107000" />
-      <workItem from="1608972648929" duration="2605000" />
+      <workItem from="1608972648929" duration="4407000" />
     </task>
     <task id="LOCAL-00001" summary="add new files create first route and blade  templates">
       <created>1608901139286</created>
@@ -194,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608975131057</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add css and js to template directory">
+      <created>1608976814765</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1608976814765</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +207,8 @@
     <MESSAGE value="prepare tables and views" />
     <MESSAGE value="succesfull return db values on views" />
     <MESSAGE value="add layout and section to view" />
-    <option name="LAST_COMMIT_MESSAGE" value="add layout and section to view" />
+    <MESSAGE value="add css and js to template directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="add css and js to template directory" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

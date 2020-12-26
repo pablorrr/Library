@@ -11,14 +11,27 @@
 |
 */
 
+
 Route::get('/', 'BookController@index')->name('book');
 
+Route::group([
+    'prefix' => 'borrowed',
+    'as' => 'borrowed.',
+], function () {
+    Route::get('/', 'BorrowedController@index')->name('borrowed');
+});
 
-Route::get('/borrowed', 'BorrowedController@index')->name('borrowed');
+Route::group([
+    'prefix' => 'borrower',
+    'as' => 'borrower.',
+], function () {
+    Route::get('/', 'BorrowerController@index')->name('borrower');
+});
 
-
-Route::get('/borrower', 'BorrowerController@index')->name('borrower');
-
-
-Route::get('/turned', 'TurnedController@index')->name('turned');
+Route::group([
+    'prefix' => 'turned',
+    'as' => 'turned.',
+], function () {
+    Route::get('/', 'TurnedController@index')->name('turned');
+});
 

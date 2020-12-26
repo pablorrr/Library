@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89c886be-f3af-41cc-bf37-e3c5374215f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Borrowed.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Borrowed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Borrower.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Borrower.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BorrowedController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BorrowedController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BorrowerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BorrowerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TurnedController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TurnedController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Turned.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Turned.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/book.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/book.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/borrowed.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/borrowed.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/borrower.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/borrower.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/turned.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/turned.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,10 +125,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../wamp64/www/nonmulti/wp-content/plugins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="de.espend.idea.laravel.ui.TemplateSettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Laravel\Library\resources\views" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -155,7 +150,8 @@
       <option name="presentableId" value="Default" />
       <updated>1608900347984</updated>
       <workItem from="1608900350653" duration="2832000" />
-      <workItem from="1608909162381" duration="7857000" />
+      <workItem from="1608909162381" duration="8107000" />
+      <workItem from="1608972648929" duration="888000" />
     </task>
     <task id="LOCAL-00001" summary="add new files create first route and blade  templates">
       <created>1608901139286</created>
@@ -178,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608911863994</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="succesfull return db values on views">
+      <created>1608918208295</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608918208295</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +191,8 @@
     <MESSAGE value="add new files create first route and blade  templates" />
     <MESSAGE value="add controllers and change route with controllers" />
     <MESSAGE value="prepare tables and views" />
-    <option name="LAST_COMMIT_MESSAGE" value="prepare tables and views" />
+    <MESSAGE value="succesfull return db values on views" />
+    <option name="LAST_COMMIT_MESSAGE" value="succesfull return db values on views" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

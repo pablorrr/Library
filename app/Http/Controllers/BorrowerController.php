@@ -10,6 +10,6 @@ class BorrowerController extends Controller
     public function index()
     {
         $borrower = Borrower::all();
-        return view('borrower', ['borrower' => $borrower]);
+        return view('public/borrower', ['borrower' => $borrower]);
     }
 }

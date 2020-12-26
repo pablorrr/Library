@@ -10,6 +10,6 @@ class BorrowedController extends Controller
     public function index()
     {//tworzenie tablicy obiektow z zawartoaci tabeli (jeden rekord= jeden obiekt)
         $borrowed = Borrowed::all();
-        return view('borrowed', ['borrowed' => $borrowed]);
+        return view('public/borrowed', ['borrowed' => $borrowed]);
     }
 }

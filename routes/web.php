@@ -35,3 +35,15 @@ Route::group([
     Route::get('/', 'TurnedController@index')->name('turned');
 });
 
+
+/**
+ *  ADMIN ROUTE
+ */
+
+Route::group([
+    'prefix' => 'admin',
+    'as' => 'admin.',
+], function () {
+    Route::get('/', 'AdminController@index')->name('admin');
+});
+

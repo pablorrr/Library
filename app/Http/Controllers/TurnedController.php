@@ -10,6 +10,6 @@ class TurnedController extends Controller
     public function index()
     {
         $turned = Turned::all();
-        return view('turned', ['turned' => $turned]);
+        return view('public/turned', ['turned' => $turned]);
     }
 }

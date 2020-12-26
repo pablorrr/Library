@@ -4,11 +4,12 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Borrower;
 
 class AdminBorrowerController extends Controller
 {
     public function index()
-    {
-        return view('admin/dashboard/tables/borrower/borrower-table');
+    {   $borrower = Borrower::all();
+        return view('admin/dashboard/tables/borrower/borrower-table',['borrower' => $borrower]);
     }
 }

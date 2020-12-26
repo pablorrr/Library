@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
+    <title>@yield('title')</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link  href="{{ asset('template/css/bootstrap.css') }}" rel="stylesheet" type="text/css" >
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
         .navbar {
@@ -49,8 +47,7 @@
 
 <div class="jumbotron">
     <div class="container text-center">
-        <h1>Book</h1>
-        <p>Main page</p>
+        <h1>@yield('title')</h1>
     </div>
 </div>
 
@@ -63,11 +60,14 @@
     </div>
 </div>
 <br>
-
-
 <footer class="container-fluid text-center">
     <p>Footer Text</p>
 </footer>
-
+<!-- jQuery -->
+<script src="{{ asset('template/js/jquery-2.0.0.min.js') }}" type="text/javascript"></script>
+<!-- Bootstrap4 files-->
+<script src="{{ asset('template/js/bootstrap.bundle.min.js') }}" type="text/javascript"></script>
+<!-- custom javascript -->
+<script src="{{ asset('template/js/script.js') }}" type="text/javascript"></script>
 </body>
 </html>

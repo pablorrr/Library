@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title', 'Book')
+
 @section('content')
     <table class="table table-striped">
         <thead class="thead-dark">

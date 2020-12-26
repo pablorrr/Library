@@ -44,6 +44,10 @@ Route::group([
     'prefix' => 'admin',
     'as' => 'admin.',
 ], function () {
-    Route::get('/', 'AdminController@index')->name('admin');
+    Route::get('/', 'Admin\AdminController@index')->name('admin');
+    Route::get('/book', 'Admin\AdminBookController@index')->name('adminbook');
+    Route::get('/borrower', 'Admin\AdminBorrowerController@index')->name('adminborrower');
+    Route::get('/borrowed', 'Admin\AdminBorrowedController@index')->name('adminborrowed');
+    Route::get('/turned', 'Admin\AdminTurnedController@index')->name('adminturned');
 });
 

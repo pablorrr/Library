@@ -12,7 +12,11 @@
 */
 
 
-Route::get('/', 'BookController@index')->name('book');
+
+
+Auth::routes();
+
+Route::post('/home', 'BookController@index')->name('book');
 
 Route::group([
     'prefix' => 'borrowed',
@@ -50,4 +54,6 @@ Route::group([
     Route::get('/borrowed', 'Admin\AdminBorrowedController@index')->name('adminborrowed');
     Route::get('/turned', 'Admin\AdminTurnedController@index')->name('adminturned');
 });
+
+
 

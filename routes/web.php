@@ -12,12 +12,10 @@
 */
 
 
-
-
 Auth::routes();
 
-Route::post('/home', 'BookController@index')->name('book');
-
+Route::get('/', 'BookController@index')->name('book');
+Route::get('/home', 'MainController@index')->name('home');
 Route::group([
     'prefix' => 'borrowed',
     'as' => 'borrowed.',
@@ -45,6 +43,8 @@ Route::group([
  */
 
 Route::group([
+
+    'middleware' => ['auth', 'check.admin.role'],
     'prefix' => 'admin',
     'as' => 'admin.',
 ], function () {

@@ -9,6 +9,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     use Notifiable;
+    const USER = 'user';
+    const ADMIN = 'admin';
 
     /**
      * The attributes that are mass assignable.
@@ -36,4 +38,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function isUser() {
+        return $this->role == self::USER;
+    }
+
+    public function isAdmin() {
+        return $this->role == self::ADMIN;
+    }
 }

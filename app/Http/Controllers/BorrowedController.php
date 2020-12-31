@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 use App\Borrowed;
 
 class BorrowedController extends Controller
-{
+{ public function __construct(){
+    $this->middleware('auth');
+}
     public function index()
     {//tworzenie tablicy obiektow z zawartoaci tabeli (jeden rekord= jeden obiekt)
         $borrowed = Borrowed::all();

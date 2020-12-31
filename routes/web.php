@@ -15,7 +15,8 @@
 Auth::routes();
 
 Route::get('/', 'BookController@index')->name('book');
-Route::get('/home', 'MainController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::group([
     'prefix' => 'borrowed',
     'as' => 'borrowed.',

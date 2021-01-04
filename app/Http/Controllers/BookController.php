@@ -7,8 +7,9 @@ use App\Book;
 
 class BookController extends Controller
 {
-    public function __construct(){
-   $this->middleware('auth');
+    public function __construct()
+    {
+        $this->middleware('auth');
     }
     public function index()
     {

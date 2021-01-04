@@ -3,6 +3,7 @@
 @section('title', 'Book')
 
 @section('content')
+    <?php use App\BorrowedBooks;?>
     {{--czesc procesu autentykacji-- za pozyczone z home. blade--}}
     <div class="container">
         <div class="row justify-content-center">
@@ -24,6 +25,14 @@
         </div>
     </div>
     <table class="table table-striped">
+
+      <?php
+        //test
+        $BorrowedBooks = BorrowedBooks::find(5);?>
+
+      <?php $data = $BorrowedBooks->amount;
+      //dd($data);
+        var_dump($data);?>
         <thead class="thead-dark">
         <tr>
             <th scope="col">id</th>

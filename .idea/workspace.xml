@@ -2,35 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89c886be-f3af-41cc-bf37-e3c5374215f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/BorrowedBooks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/BorrowedBooksFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_04_113911_create_borrowed_books_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/BorrowedBookSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Borrowed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Borrower.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBorrowedController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBorrowerController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminTurnedController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BorrowedController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BorrowerController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TurnedController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Turned.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/BorrowedFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/BorrowerFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/TurnedFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_19_092155_create_borrowed_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_19_092222_create_borrower_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_19_092244_create_turned_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/BorrowedSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/BorrowerSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_19_092109_create_book_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_19_092109_create_book_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/TurnedSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/tables/borrowed/borrowed-table.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/tables/borrower/borrower-table.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/tables/turned/turned-table.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/public/borrowed.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/public/borrower.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/public/turned.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard/base.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/book.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/book.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/layout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +175,8 @@
       <workItem from="1609339961113" duration="7705000" />
       <workItem from="1609403522571" duration="2894000" />
       <workItem from="1609410756340" duration="2475000" />
-      <workItem from="1609749863052" duration="2155000" />
+      <workItem from="1609749863052" duration="6416000" />
+      <workItem from="1609772592383" duration="7085000" />
     </task>
     <task id="LOCAL-00001" summary="add new files create first route and blade  templates">
       <created>1608901139286</created>
@@ -298,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609405939033</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="total rebuilt , add user seeder">
+      <created>1609757649329</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1609757649329</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +312,8 @@
     <MESSAGE value="add new public front end files" />
     <MESSAGE value="hide menu when logout" />
     <MESSAGE value="protect routes when user logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="protect routes when user logout" />
+    <MESSAGE value="total rebuilt , add user seeder" />
+    <option name="LAST_COMMIT_MESSAGE" value="total rebuilt , add user seeder" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -39,6 +39,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function borrowed_books()
+    {
+        return $this->hasMany(BorrowedBooks::class);
+    }
+
+
     public function isUser() {
         return $this->role == self::USER;
     }

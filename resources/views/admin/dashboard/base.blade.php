@@ -92,7 +92,7 @@
                  data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Manage Borrowers</h6>
-                    <a class="collapse-item" href="{{route('admin.adminborrower')}}">Show Borrower Table</a>
+                    <a class="collapse-item" href="">Show Borrower Table</a>
                     <a class="collapse-item" href="edit-borrower-table.html">Add Borrower</a>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                  data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Manage Borrowerd</h6>
-                    <a class="collapse-item" href="{{route('admin.adminborrowed')}}">Show Borrowed Table</a>
+                    <a class="collapse-item" href="">Show Borrowed Table</a>
                     <a class="collapse-item" href="edit-borrowed-table.html">Add Borrowed</a>
                 </div>
             </div>
@@ -129,7 +129,7 @@
             <div id="collapseTurned" class="collapse" aria-labelledby="headingTurned" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Manage Turneded</h6>
-                    <a class="collapse-item" href="{{route('admin.adminturned')}}">Show Turned Table</a>
+                    <a class="collapse-item" href="">Show Turned Table</a>
                     <a class="collapse-item" href="edit-turned-table.html">Add Turned</a>
                 </div>
             </div>

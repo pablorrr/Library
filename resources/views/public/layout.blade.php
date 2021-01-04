@@ -35,9 +35,7 @@
             @if(Auth::check())
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="{!! url('/'); !!}">Book</a></li>
-                    <li><a href="{!! url('/turned'); !!}">Turned</a></li>
-                    <li><a href="{!! url('/borrower'); !!}">Borrower</a></li>
-                    <li><a href="{!! url('/borrowed'); !!}">Borrowed</a></li>
+
                     @if (Auth::user()->isAdmin()=='admin')
                         <li><a href="{!! url('/admin'); !!}">ADMIN</a></li>
                     @endif

@@ -10,8 +10,9 @@ class Book extends Model
 
     public function borrowed_book()
     {
-        return $this->belongsTo(BorrowedBooks::class);
+        return $this->belongsTo(BorrowedBooks::class,'id');
     }
+
 
 
 }

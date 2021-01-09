@@ -9,6 +9,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     use Notifiable;
+
     const USER = 'user';
     const ADMIN = 'admin';
 
@@ -39,17 +40,19 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function borrowed_books()
+    public function borrowed_books()//uwaga!!! scisle powiazania w kontrolerze BookController
     {
         return $this->hasMany(BorrowedBooks::class);
     }
 
 
-    public function isUser() {
+    public function isUser()
+    {
         return $this->role == self::USER;
     }
 
-    public function isAdmin() {
+    public function isAdmin()
+    {
         return $this->role == self::ADMIN;
     }
 }

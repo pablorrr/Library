@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89c886be-f3af-41cc-bf37-e3c5374215f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CreateBookRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdateBookRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/dashboard/tables/create-book.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Book.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_19_092109_create_book_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_19_092109_create_book_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard/base.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/public/book.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/books/book.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/tables/book-table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard/tables/book-table.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +173,7 @@
       <workItem from="1610184360450" duration="888000" />
       <workItem from="1610186807127" duration="18367000" />
       <workItem from="1610268640639" duration="7916000" />
-      <workItem from="1610279736338" duration="9301000" />
+      <workItem from="1610279736338" duration="11805000" />
     </task>
     <task id="LOCAL-00001" summary="add new files create first route and blade  templates">
       <created>1608901139286</created>
@@ -315,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610276021484</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add new books to db implementation">
+      <created>1610289414301</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1610289414301</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +341,8 @@
     <MESSAGE value="after first rebuilt ,need new controllers" />
     <MESSAGE value="testy dal wprowadzonych relacji oraz testdlawypoztyyczonych ksiazek danego autora - udane" />
     <MESSAGE value="add borrowed books" />
-    <option name="LAST_COMMIT_MESSAGE" value="add borrowed books" />
+    <MESSAGE value="add new books to db implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new books to db implementation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

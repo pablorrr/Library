@@ -75,11 +75,19 @@ class AdminBookController extends Controller
      * Remove the specified resource from storage.
      *
      * @param int $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function destroy($id)
+    public function destroy($book_id)
     {
-        //
+        $book = Book::findOrFail($book_id);
+        $book->delete();
+
+        return back()->with([
+            'status' => [
+                'type' => 'success',
+                'content' => 'Książka została usunięta',
+            ]
+        ]);
     }
 
 

@@ -17,6 +17,7 @@
                         <th scope="col">id</th>
                         <th scope="col">Title</th>
                         <th scope="col">Author</th>
+                        <th scope="col">Usuń</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -26,12 +27,18 @@
                             <td>{{$singleBook->title}}</td>
                             <td>{{$singleBook->author}}</td>
 
+                            <td>
+                                <a href="{{route('admin.destroy',$singleBook->id)}}"
+                                   class="btn btn-danger btn-sm">Usuń</a>
+                            </td>
+
+
                         </tr>
                     @endforeach
                     </tbody>
                 </table>
-                </div>
             </div>
         </div>
+    </div>
     <!-- /.container-fluid -->
 @endsection

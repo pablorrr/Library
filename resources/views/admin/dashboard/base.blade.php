@@ -75,7 +75,7 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Manage Books</h6>
                     <a class="collapse-item" href="{{route('admin.adminbook')}}">Show Book Table</a>
-                    <a class="collapse-item" href="edit-book-table.html">Add Book</a>
+                    <a class="collapse-item" href="{{route('admin.adminbookcreate')}}">Add Book</a>
                 </div>
             </div>
         </li>
@@ -187,6 +187,17 @@
 
             </nav>
             <!-- End of Topbar -->
+            @if (session('status'))
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-{{ session('status')['type'] }}">
+                                {{ session('status')['content'] }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        @endif
 
             <!-- Begin Page Content -->
             <div class="container-fluid">

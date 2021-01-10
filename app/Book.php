@@ -6,13 +6,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
-    public $fillable=['id','title','author'];
+    public $timestamps = false;
+    public $fillable = ['id', 'title', 'author'];
+
+    /**
+     * @var mixed
+     */
+
 
     public function borrowed_book()
     {
-        return $this->belongsTo(BorrowedBooks::class,'id');
+        return $this->belongsTo(BorrowedBooks::class, 'id');
     }
-
 
 
 }

@@ -16,6 +16,6 @@ class HomeController extends Controller
     public function index()
     {
         $books = Book::all();
-        return view('public/book', ['books' => $books]);
+        return view('public/books/book', ['books' => $books]);
     }
 }

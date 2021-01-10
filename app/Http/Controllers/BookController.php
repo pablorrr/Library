@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
-use Illuminate\Http\Request;
 use App\Book;
+use Illuminate\Http\Request;
 
 class BookController extends Controller
 {
@@ -17,6 +16,24 @@ class BookController extends Controller
     {
 
         $books = Book::all();
-        return view('public/book', ['books' => $books]);
+        return view('public/books/book', ['books' => $books]);
     }
+
+
+
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+
+
+
 }

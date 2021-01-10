@@ -3,7 +3,7 @@
 @section('title', 'Book')
 
 @section('content')
-    <?php use App\BorrowedBooks;use App\User;?>
+    <?php// use App\BorrowedBooks;use App\User;?>
     {{--czesc procesu autentykacji-- za pozyczone z home. blade--}}
     <div class="container">
         <div class="row justify-content-center">

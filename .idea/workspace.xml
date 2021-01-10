@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89c886be-f3af-41cc-bf37-e3c5374215f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBorrowedController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminUserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/dashboard/tables/borrowed-table.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/dashboard/tables/users-table.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/BorrowedBooks.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BorrowedBooks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard/base.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/tables/book/book-table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard/tables/book-table.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/public/book.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/book.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,20 +133,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/auth/passwords" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/dashboard/tables" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="de.espend.idea.laravel.ui.TemplateSettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Laravel\Library\resources\views\admin\dashboard\tables" />
       <recent name="C:\Laravel\Library\resources\views\auth\passwords" />
       <recent name="C:\Laravel\Library\resources\views\auth" />
       <recent name="C:\Laravel\Library\resources\views\admin\dashboard\tables\turned" />
       <recent name="C:\Laravel\Library\resources\views\admin\dashboard\tables\borrower" />
-      <recent name="C:\Laravel\Library\resources\views\admin\dashboard\tables\borrowed" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Laravel\Library\resources\views\admin\dashboard\tables" />
       <recent name="C:\Laravel\Library\resources\views\public" />
       <recent name="C:\Laravel\Library\public\sbadmin" />
     </key>
@@ -171,7 +176,8 @@
       <workItem from="1609749863052" duration="6416000" />
       <workItem from="1609772592383" duration="7344000" />
       <workItem from="1610184360450" duration="888000" />
-      <workItem from="1610186807127" duration="17462000" />
+      <workItem from="1610186807127" duration="18367000" />
+      <workItem from="1610268640639" duration="7290000" />
     </task>
     <task id="LOCAL-00001" summary="add new files create first route and blade  templates">
       <created>1608901139286</created>
@@ -292,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609779977063</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="testy dal wprowadzonych relacji oraz testdlawypoztyyczonych ksiazek danego autora - udane">
+      <created>1610204810777</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1610204810777</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +329,8 @@
     <MESSAGE value="protect routes when user logout" />
     <MESSAGE value="total rebuilt , add user seeder" />
     <MESSAGE value="after first rebuilt ,need new controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="after first rebuilt ,need new controllers" />
+    <MESSAGE value="testy dal wprowadzonych relacji oraz testdlawypoztyyczonych ksiazek danego autora - udane" />
+    <option name="LAST_COMMIT_MESSAGE" value="testy dal wprowadzonych relacji oraz testdlawypoztyyczonych ksiazek danego autora - udane" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

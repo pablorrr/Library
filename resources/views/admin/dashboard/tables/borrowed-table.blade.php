@@ -15,25 +15,27 @@
                     <thead class="thead-dark">
                     <tr>
                         <th scope="col">id</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Author</th>
+                        <th scope="col">user id</th>
+                        <th scope="col">book id</th>
+                        <th scope="col">amount</th>
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($books as $singleBook)
+                    {{--todo: przerobic to w ten spososb aby wuswietlaly sie nazy autora ksiazki tytuli nazwa usera ktry
+                    wypozyczyl ksiazke--}}
+                    @foreach($borrowed as $singleBorrowed)
                         <tr>
-                            <th scope="row">{{$singleBook->id_book}}</th>
-                            <td>{{$singleBook->title}}</td>
-                            <td>{{$singleBook->author}}</td>
-
+                            <th scope="row">{{$singleBorrowed->id}}</th>
+                            <td>{{$singleBorrowed->user_id}}</td>
+                            <td>{{$singleBorrowed->book_id}}</td>
+                            <td>{{$singleBorrowed->amount}}</td>
                         </tr>
                     @endforeach
                     </tbody>
                 </table>
-                </div>
             </div>
-        </div>
 
+        </div>
     </div>
     <!-- /.container-fluid -->
 @endsection

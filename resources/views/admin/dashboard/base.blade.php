@@ -81,19 +81,19 @@
         </li>
         <!-- Divider -->
         <hr class="sidebar-divider">
-        <!-- Nav Item - BORROWER -->
+        <!-- Nav Item - USER -->
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBorrower"
-               aria-expanded="true" aria-controls="collapseBorrower">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUser"
+               aria-expanded="true" aria-controls="collapseUser">
                 <i class="fas fa-fw fa-cog"></i>
-                <span>Borrower</span>
+                <span>User</span>
             </a>
-            <div id="collapseBorrower" class="collapse" aria-labelledby="headingBorrower"
+            <div id="collapseUser" class="collapse" aria-labelledby="headingUser"
                  data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Manage Borrowers</h6>
-                    <a class="collapse-item" href="">Show Borrower Table</a>
-                    <a class="collapse-item" href="edit-borrower-table.html">Add Borrower</a>
+                    <h6 class="collapse-header">Manage Users</h6>
+                    <a class="collapse-item" href="{{route('admin.adminuser')}}">Show Users</a>
+                    <a class="collapse-item" href="edit-user-table.html">Add User</a>
                 </div>
             </div>
         </li>
@@ -111,29 +111,13 @@
                  data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Manage Borrowerd</h6>
-                    <a class="collapse-item" href="">Show Borrowed Table</a>
-                    <a class="collapse-item" href="edit-borrowed-table.html">Add Borrowed</a>
+                    <a class="collapse-item" href="{{route('admin.adminborrowed')}}">Show Borrowed Table</a>
+
                 </div>
             </div>
         </li>
 
-        <!-- Divider -->
-        <hr class="sidebar-divider d-none d-md-block">
-        <!-- Nav Item - Turned-->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTurned"
-               aria-expanded="true" aria-controls="collapseTurned">
-                <i class="fas fa-fw fa-cog"></i>
-                <span>Turned</span>
-            </a>
-            <div id="collapseTurned" class="collapse" aria-labelledby="headingTurned" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Manage Turneded</h6>
-                    <a class="collapse-item" href="">Show Turned Table</a>
-                    <a class="collapse-item" href="edit-turned-table.html">Add Turned</a>
-                </div>
-            </div>
-        </li>
+
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
 

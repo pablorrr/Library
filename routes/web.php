@@ -29,6 +29,8 @@ Route::group([
 ], function () {
     Route::get('/', 'Admin\AdminController@index')->name('admin');
     Route::get('/book', 'Admin\AdminBookController@index')->name('adminbook');
+    Route::get('/users', 'Admin\AdminUserController@index')->name('adminuser');
+    Route::get('/borrowed', 'Admin\AdminBorrowedController@index')->name('adminborrowed');
 
 });
 

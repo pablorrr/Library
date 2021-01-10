@@ -11,6 +11,6 @@ class AdminBookController extends Controller
     public function index()
     {
         $books = Book::all();
-        return view('admin/dashboard/tables/book/book-table', ['books' => $books]);
+        return view('admin/dashboard/tables/book-table', ['books' => $books]);
     }
 }

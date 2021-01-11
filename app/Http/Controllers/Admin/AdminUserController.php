@@ -14,4 +14,6 @@ class AdminUserController extends Controller
         $users = User::all();
         return view('admin/dashboard/tables/users-table', ['users' => $users]);
     }
+
+
 }

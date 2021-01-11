@@ -40,12 +40,18 @@ Route::group([
 ], function () {
     Route::get('/', 'Admin\AdminController@index')->name('admin');
     Route::get('/book', 'Admin\AdminBookController@index')->name('adminbook');
+    Route::get('/users', 'Admin\AdminUserController@index')->name('adminuser');
+    Route::get('/borrowed', 'Admin\AdminBorrowedController@index')->name('adminborrowed');
+    Route::get('/{book}', 'Admin\AdminBookController@show')->name('adminBookShow');
+
+    //book CRUD
     Route::get('/book/create', 'Admin\AdminBookController@create')->name('adminbookcreate');
     Route::post('/book', 'Admin\AdminBookController@store')->name('adminbookstore');
     Route::put('/book/{book}', 'Admin\AdminBookController@update')->name('adminbookupdate');
     Route::get('/{book}/destroy', 'Admin\AdminBookController@destroy')->name('destroy');
-    Route::get('/users', 'Admin\AdminUserController@index')->name('adminuser');
-    Route::get('/borrowed', 'Admin\AdminBorrowedController@index')->name('adminborrowed');
+
+
+
 
 });
 

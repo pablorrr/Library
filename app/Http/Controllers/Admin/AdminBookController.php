@@ -15,6 +15,14 @@ class AdminBookController extends Controller
         return view('admin/dashboard/tables/book-table', ['books' => $books]);
     }
 
+    public function show($book_id)
+    {
+        $book = Book::findOrFail($book_id);
+
+        return view('admin.dashboard.tables.show-book-table', compact('book'));
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *

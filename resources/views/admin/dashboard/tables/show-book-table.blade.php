@@ -8,26 +8,33 @@
 
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">User Table</h6>
+                <p>
+                    <a href="{{route('admin.adminbook')}}"
+                       class="btn btn-danger btn-sm">Back</a>
+                </p>
+            </div>
+
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Book Table</h6>
             </div>
             <div class="card-body">
                 <table class="table table-striped">
                     <thead class="thead-dark">
                     <tr>
                         <th scope="col">id</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">E-mail</th>
-                        <th scope="col">Usuń</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Author</th>
+
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($users as $singleUser)
-                        <tr>
-                            <th scope="row">{{$singleUser->id}}</th>
-                            <td>{{$singleUser->name}}</td>
-                            <td>{{$singleUser->email}}</td>
-                        </tr>
-                    @endforeach
+
+                    <tr>
+                        <th scope="row">{{$book->id}}</th>
+                        <td>{{$book->title}}</td>
+                        <td>{{$book->author}}</td>
+                    </tr>
+
                     </tbody>
                 </table>
             </div>

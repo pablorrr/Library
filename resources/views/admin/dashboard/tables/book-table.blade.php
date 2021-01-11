@@ -16,7 +16,6 @@
                     <tr>
                         <th scope="col">id</th>
                         <th scope="col">Title</th>
-
                         <th scope="col">Usuń</th>
                     </tr>
                     </thead>
@@ -31,8 +30,6 @@
                                 <a href="{{route('admin.destroy',$singleBook->id)}}"
                                    class="btn btn-danger btn-sm">Usuń</a>
                             </td>
-
-
                         </tr>
                     @endforeach
                     </tbody>

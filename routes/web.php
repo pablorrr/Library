@@ -38,12 +38,16 @@ Route::group([
     'prefix' => 'admin',
     'as' => 'admin.',
 ], function () {
+    //index
     Route::get('/', 'Admin\AdminController@index')->name('admin');
     Route::get('/book', 'Admin\AdminBookController@index')->name('adminbook');
     Route::get('/users', 'Admin\AdminUserController@index')->name('adminuser');
     Route::get('/borrowed', 'Admin\AdminBorrowedController@index')->name('adminborrowed');
-    Route::get('/{book}', 'Admin\AdminBookController@show')->name('adminBookShow');
-
+    //show method
+    Route::get('/book/{book}', 'Admin\AdminBookController@show')->name('adminBookShow');
+    Route::get('/user/borrowed-table/{user}','Admin\AdminBorrowedController@showUser')->name('adminUserBorrowedTableShow');
+    Route::get('/book/borrowed-table/{book}', 'Admin\AdminBorrowedController@showBook')->name('adminBookBorrowedTableShow');
+    Route::get('/user/{user}', 'Admin\AdminUserController@showUser')->name('adminUserShow');
     //book CRUD
     Route::get('/book/create', 'Admin\AdminBookController@create')->name('adminbookcreate');
     Route::post('/book', 'Admin\AdminBookController@store')->name('adminbookstore');

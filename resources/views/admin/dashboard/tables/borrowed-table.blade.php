@@ -26,8 +26,13 @@
                     @foreach($borrowed as $singleBorrowed)
                         <tr>
                             <th scope="row">{{$singleBorrowed->id}}</th>
-                            <td>{{$singleBorrowed->user_id}}</td>
-                            <td>{{$singleBorrowed->book_id}}</td>
+
+                            <td><a href="{{route('admin.adminUserBorrowedTableShow',$singleBorrowed->user_id)}}">
+                                    {{$singleBorrowed->user_id}}</a>
+                            </td>
+                            <td><a href="{{route('admin.adminBookBorrowedTableShow',$singleBorrowed->book_id)}}">
+                                    {{$singleBorrowed->book_id}}</a>
+                            </td>
                             <td>{{$singleBorrowed->amount}}</td>
                         </tr>
                     @endforeach

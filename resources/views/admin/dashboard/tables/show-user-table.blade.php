@@ -9,36 +9,35 @@
         <div class="card shadow mb-4">
             <div class="card-header py-3">
                 <p>
-                    <a href="{{route('admin.adminbook')}}"
-                       class="btn btn-danger btn-sm">Back to Book Table</a>
-                </p>
-            </div>
-            <div class="card-header py-3">
-                <p>
-                    <a href="{{route('admin.adminborrowed')}}"
-                       class="btn btn-danger btn-sm">Back to Borrowed Book Table</a>
+                    <a href="{{route('admin.adminuser')}}"
+                       class="btn btn-danger btn-sm">Back to User Table</a>
                 </p>
             </div>
 
             <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Book Table</h6>
+                <p>
+                    <a href="{{route('admin.adminborrowed')}}"
+                       class="btn btn-danger btn-sm">Back to Borrowed Table</a>
+                </p>
+            </div>
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">User</h6>
             </div>
             <div class="card-body">
                 <table class="table table-striped">
                     <thead class="thead-dark">
                     <tr>
                         <th scope="col">id</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Author</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">E-mail</th>
 
                     </tr>
                     </thead>
                     <tbody>
-
                     <tr>
-                        <th scope="row">{{$book->id}}</th>
-                        <td>{{$book->title}}</td>
-                        <td>{{$book->author}}</td>
+                        <th scope="row">{{$user->id}}</th>
+                        <td>{{$user->name}}</td>
+                        <td>{{$user->email}}</td>
                     </tr>
 
                     </tbody>

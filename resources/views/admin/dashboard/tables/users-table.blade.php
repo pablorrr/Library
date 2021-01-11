@@ -16,16 +16,17 @@
                     <tr>
                         <th scope="col">id</th>
                         <th scope="col">Name</th>
-                        <th scope="col">E-mail</th>
-                        <th scope="col">Usuń</th>
+
                     </tr>
                     </thead>
                     <tbody>
                     @foreach($users as $singleUser)
                         <tr>
                             <th scope="row">{{$singleUser->id}}</th>
-                            <td>{{$singleUser->name}}</td>
-                            <td>{{$singleUser->email}}</td>
+
+                            <td><a href="{{route('admin.adminUserShow',$singleUser->id)}}">
+                                    {{$singleUser->name}}</a>
+                            </td>
                         </tr>
                     @endforeach
                     </tbody>

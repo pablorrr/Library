@@ -9,15 +9,15 @@
         <div class="card shadow mb-4">
             <div class="card-header py-3">
                 <p>
-                    <a href="{{route('admin.adminuser')}}"
-                       class="btn btn-danger btn-sm">Back to User Table</a>
+                    <a href="{{route('admin.user')}}"
+                       class="btn btn-success btn-sm">Back to User Table</a>
                 </p>
             </div>
 
             <div class="card-header py-3">
                 <p>
-                    <a href="{{route('admin.adminborrowed')}}"
-                       class="btn btn-danger btn-sm">Back to Borrowed Table</a>
+                    <a href="{{route('admin.borrowed')}}"
+                       class="btn btn-success btn-sm">Back to Borrowed Table</a>
                 </p>
             </div>
             <div class="card-header py-3">

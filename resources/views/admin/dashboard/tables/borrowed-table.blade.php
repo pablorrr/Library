@@ -8,6 +8,19 @@
 
         <div class="card shadow mb-4">
             <div class="card-header py-3">
+                <p>
+                    <a href="{{route('admin.book')}}"
+                       class="btn btn-success btn-sm">Back to Book Table</a>
+                </p>
+            </div>
+            <div class="card-header py-3">
+                <p>
+                    <a href="{{route('admin.user')}}"
+                       class="btn btn-success btn-sm">Back to User Table</a>
+                </p>
+            </div>
+
+            <div class="card-header py-3">
                 <h6 class="m-0 font-weight-bold text-primary">Book Table</h6>
             </div>
             <div class="card-body">
@@ -27,10 +40,10 @@
                         <tr>
                             <th scope="row">{{$singleBorrowed->id}}</th>
 
-                            <td><a href="{{route('admin.adminUserBorrowedTableShow',$singleBorrowed->user_id)}}">
+                            <td><a href="{{route('admin.user.borrowed.table.show',$singleBorrowed->user_id)}}">
                                     {{$singleBorrowed->user_id}}</a>
                             </td>
-                            <td><a href="{{route('admin.adminBookBorrowedTableShow',$singleBorrowed->book_id)}}">
+                            <td><a href="{{route('admin.book.borrowed.table.show',$singleBorrowed->book_id)}}">
                                     {{$singleBorrowed->book_id}}</a>
                             </td>
                             <td>{{$singleBorrowed->amount}}</td>

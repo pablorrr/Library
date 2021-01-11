@@ -74,8 +74,8 @@
             <div id="collapseBooks" class="collapse" aria-labelledby="headingBooks" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Manage Books</h6>
-                    <a class="collapse-item" href="{{route('admin.adminbook')}}">Show Book Table</a>
-                    <a class="collapse-item" href="{{route('admin.adminbookcreate')}}">Add Book</a>
+                    <a class="collapse-item" href="{{route('admin.book')}}">Show Book Table</a>
+                    <a class="collapse-item" href="{{route('admin.book.create')}}">Add Book</a>
                 </div>
             </div>
         </li>
@@ -92,7 +92,7 @@
                  data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Manage Users</h6>
-                    <a class="collapse-item" href="{{route('admin.adminuser')}}">Show Users</a>
+                    <a class="collapse-item" href="{{route('admin.user')}}">Show Users</a>
                 </div>
             </div>
         </li>
@@ -110,7 +110,7 @@
                  data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Manage Borrowerd</h6>
-                    <a class="collapse-item" href="{{route('admin.adminborrowed')}}">Show Borrowed Table</a>
+                    <a class="collapse-item" href="{{route('admin.borrowed')}}">Show Borrowed Table</a>
 
                 </div>
             </div>

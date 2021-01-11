@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests\CreateBookRequest;
+use App\Http\Requests\UpdateBookRequest;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Book;
@@ -22,11 +23,18 @@ class AdminBookController extends Controller
         return view('admin.dashboard.tables.show-book-table', compact('book'));
     }
 
+    public function edit($book_id)
+    {
+        $book = Book::findOrFail($book_id);
+
+        return view('admin.dashboard.tables.book-edit', compact('book'));
+    }
+
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function create()
     {

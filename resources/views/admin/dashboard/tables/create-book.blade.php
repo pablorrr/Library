@@ -1,7 +1,13 @@
 @extends('admin.dashboard.base')
 
 @section('content')
-    <form action="{{route('admin.adminbookstore')}}" method="POST">
+    <div class="card-header py-3">
+        <p>
+            <a href="{{route('admin.book')}}"
+               class="btn btn-success btn-sm">Back to Book Table</a>
+        </p>
+    </div>
+    <form action="{{route('admin.book.store')}}" method="POST">
         @csrf
         <label for="title">Tytuł</label>
         <input type="text" name="title" class="form-control" id="title" value="{{ old('title') }}">

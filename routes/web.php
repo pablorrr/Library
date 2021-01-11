@@ -40,21 +40,21 @@ Route::group([
 ], function () {
     //index
     Route::get('/', 'Admin\AdminController@index')->name('admin');
-    Route::get('/book', 'Admin\AdminBookController@index')->name('adminbook');
-    Route::get('/users', 'Admin\AdminUserController@index')->name('adminuser');
-    Route::get('/borrowed', 'Admin\AdminBorrowedController@index')->name('adminborrowed');
+    Route::get('/book', 'Admin\AdminBookController@index')->name('book');
+    Route::get('/users', 'Admin\AdminUserController@index')->name('user');
+    Route::get('/borrowed', 'Admin\AdminBorrowedController@index')->name('borrowed');
     //show method
-    Route::get('/book/{book}', 'Admin\AdminBookController@show')->name('adminBookShow');
-    Route::get('/user/borrowed-table/{user}','Admin\AdminBorrowedController@showUser')->name('adminUserBorrowedTableShow');
-    Route::get('/book/borrowed-table/{book}', 'Admin\AdminBorrowedController@showBook')->name('adminBookBorrowedTableShow');
-    Route::get('/user/{user}', 'Admin\AdminUserController@showUser')->name('adminUserShow');
+    Route::get('/book/{book}', 'Admin\AdminBookController@show')->name('book.show');
+    Route::get('/user/borrowed-table/{user}', 'Admin\AdminBorrowedController@showUser')->name('user.borrowed.table.show');
+    Route::get('/book/borrowed-table/{book}', 'Admin\AdminBorrowedController@showBook')->name('book.borrowed.table.show');
+    Route::get('/user/{user}', 'Admin\AdminUserController@showUser')->name('user.show');
+    //edit
+    Route::get('/book-edit/{book}', 'Admin\AdminBookController@edit')->name('book.edit');
     //book CRUD
-    Route::get('/book/create', 'Admin\AdminBookController@create')->name('adminbookcreate');
-    Route::post('/book', 'Admin\AdminBookController@store')->name('adminbookstore');
-    Route::put('/book/{book}', 'Admin\AdminBookController@update')->name('adminbookupdate');
-    Route::get('/{book}/destroy', 'Admin\AdminBookController@destroy')->name('destroy');
-
-
+    Route::get('/create-book', 'Admin\AdminBookController@create')->name('book.create');
+    Route::post('/book', 'Admin\AdminBookController@store')->name('book.store');
+    Route::put('/book/{book}', 'Admin\AdminBookController@update')->name('book.update');
+    Route::get('/{book}/destroy', 'Admin\AdminBookController@destroy')->name('book.destroy');
 
 
 });

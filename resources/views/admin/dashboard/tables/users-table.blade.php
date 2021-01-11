@@ -24,7 +24,7 @@
                         <tr>
                             <th scope="row">{{$singleUser->id}}</th>
 
-                            <td><a href="{{route('admin.adminUserShow',$singleUser->id)}}">
+                            <td><a href="{{route('admin.user.show',$singleUser->id)}}">
                                     {{$singleUser->name}}</a>
                             </td>
                         </tr>

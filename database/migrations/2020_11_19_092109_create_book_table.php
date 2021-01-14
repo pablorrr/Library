@@ -17,6 +17,7 @@ class CreateBookTable extends Migration
             $table->bigIncrements('id');
             $table->string('title', 32)->unique();
             $table->string('author', 32)->unique();
+            $table->string('status')->default('rent');
         });
     }
 

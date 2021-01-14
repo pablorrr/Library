@@ -16,6 +16,7 @@ Auth::routes();
 
 Route::get('/', 'BookController@index')->name('book');
 Route::get('/book', 'BookController@index')->name('book');
+Route::get('/book-rent/{book}', 'BookController@rent')->name('book.rent');
 
 /**
  *  BOOK CRUD ROUTES

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\UpdateSettings;
+use App\Http\Requests\UpdateSettingsRequest;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -15,7 +15,7 @@ class AdminSettingsController extends Controller
         return view('admin/dashboard/index');
     }
 
-    public function update(UpdateSettings $request)
+    public function update(UpdateSettingsRequest $request)
     {
 
         $user = User::findOrFail(auth()->user()->id);

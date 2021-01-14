@@ -10,13 +10,13 @@
             <div class="card-header py-3">
                 <p>
                     <a href="{{route('admin.book')}}"
-                       class="btn btn-succes btn-sm">Back to Book Table</a>
+                       class="btn btn-success btn-sm">Back to Book Table</a>
                 </p>
             </div>
             <div class="card-header py-3">
                 <p>
                     <a href="{{route('admin.borrowed')}}"
-                       class="btn btn-succes btn-sm">Back to Borrowed Book Table</a>
+                       class="btn btn-success btn-sm">Back to Borrowed Book Table</a>
                 </p>
             </div>
 

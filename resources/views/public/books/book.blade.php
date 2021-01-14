@@ -31,23 +31,23 @@
         //uwaga!!! przy wsyztskich wlasciwowsciach jest mozliwosc postawinia () jako ze sa to odwolania do metod!!
         //test dla has many - users has many books  , w boorowed books jest klucz obcy user_id
         //$books2 = User::find(2)->borrowed_books;
-         //dd($books2);
+        //dd($books2);
 
 
 
 
 
         //terst dla belogns to  tablica book przypisana do borrowed book
-       // $book = \App\Book::find(2);//nawiguje po bookk id w borrowed books
-       // $user = $book->borrowed_book;
+        // $book = \App\Book::find(2);//nawiguje po bookk id w borrowed books
+        // $user = $book->borrowed_book;
         //dd($user);- dobrze
 
         //test dla has_one() - borrowed books moze miecjedna ksiazke
         //$borrowedBooks = BorrowedBooks::find(4)->books;//nawiguje po book id w borrowed
         //dd($borrowedBooks); - dobrze
         //test dla belongs to dla borrowed books w stosunku do users - jedna pozyczona ksiazka orzez usera
-       // $book = \App\BorrowedBooks::find(1);//nawiguje po bookk id w borrowed books
-       // $userr = $book->users;
+        // $book = \App\BorrowedBooks::find(1);//nawiguje po bookk id w borrowed books
+        // $userr = $book->users;
         // dd($userr);
 
         //test- sprawdz jakiego autora wypozycza dany user
@@ -56,12 +56,12 @@
         //$book_id = BorrowedBooks::myQuery();
         // $authorArr = [];
 
-          // foreach ($book_id as $id) {
-           //$books = \App\Book::findorFail((int)$id->book_id);
-         //$author =(string) $books->author;
+        // foreach ($book_id as $id) {
+        //$books = \App\Book::findorFail((int)$id->book_id);
+        //$author =(string) $books->author;
         //  array_push($authorArr, $author);
         //   }
-         //  dd($authorArr);//works!!!
+        //  dd($authorArr);//works!!!
 
 
 
@@ -71,6 +71,7 @@
             <th scope="col">id</th>
             <th scope="col">Title</th>
             <th scope="col">Author</th>
+
         </tr>
         </thead>
         <tbody>
@@ -79,7 +80,10 @@
                 <th scope="row">{{$singleBook->id}}</th>
                 <td>{{$singleBook->title}}</td>
                 <td>{{$singleBook->author}}</td>
-
+                <td><a href="{{route('admin.book')}}"
+                       class="btn btn-primary btn-sm">Borrow</a></td>
+                <td><a href="{{route('admin.book')}}"
+                       class="btn btn-warning btn-sm">Give back</a></td>
             </tr>
         @endforeach
         </tbody>

@@ -27,30 +27,4 @@ class BookController extends Controller
     }
 
 
-    /**
-     * Display the specified resource.
-     *
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-
-    }
-
-    public function rent($book_id)
-    {
-        $book = Book::findOrFail($book_id);
-        if ($book->status != 'give back' && $book->status == 'rent') {
-            Book::where('id', $book_id)->update(array('status' => 'give back'));
-            return redirect('/');
-        }
-        elseif ($book->status != 'rent'&& $book->status == 'give back'){
-            Book::where('id', $book_id)->update(array('status' => 'rent'));
-            return redirect('/');
-        }
-
-    }
-
-
 }

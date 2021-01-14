@@ -17,8 +17,6 @@ class CreateBorrowedBooksTable extends Migration
             $table->bigIncrements('id');
             $table->integer('user_id')->unsigned()->nullable();
             $table->integer('book_id')->unsigned()->nullable();
-            $table->integer('amount');
-            $table->timestamps();
         });
     }
 

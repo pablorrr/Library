@@ -17,6 +17,7 @@
                         <th scope="col">Title</th>
                         <th scope="col">Edit</th>
                         <th scope="col">Remove</th>
+                        <th scope="col">Status</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -33,6 +34,7 @@
                                 <a href="{{route('admin.book.destroy',$singleBook->id)}}"
                                    class="btn btn-danger btn-sm">Remove</a>
                             </td>
+                            <td>{{$singleBook->status}}</td>
                         </tr>
                     @endforeach
                     </tbody>

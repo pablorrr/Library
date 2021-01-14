@@ -16,7 +16,7 @@ Auth::routes();
 
 Route::get('/', 'BookController@index')->name('book');
 Route::get('/book', 'BookController@index')->name('book');
-Route::get('/book-rent/{book}', 'BookController@rent')->name('book.rent');
+//Route::get('/book-rent/{book}', 'BookController@rent')->name('book.rent');
 
 /**
  *  BOOK CRUD ROUTES
@@ -58,6 +58,8 @@ Route::group([
     Route::get('/{book}/destroy', 'Admin\AdminBookController@destroy')->name('book.destroy');
     Route::get('/settings', 'Admin\AdminSettingsController@index')->name('user.settings');
     Route::put('/settings', 'Admin\AdminSettingsController@update')->name('user.update');
+    //rent
+    Route::get('/book-rent/{book}{user}', 'Admin\AdminBorrowedController@rent')->name('book.rent');
 
 
 });

@@ -30,7 +30,7 @@
                         <th scope="col">id</th>
                         <th scope="col">user id</th>
                         <th scope="col">book id</th>
-                        <th scope="col">amount</th>
+
                     </tr>
                     </thead>
                     <tbody>
@@ -46,7 +46,7 @@
                             <td><a href="{{route('admin.book.borrowed.table.show',$singleBorrowed->book_id)}}">
                                     {{$singleBorrowed->book_id}}</a>
                             </td>
-                            <td>{{$singleBorrowed->amount}}</td>
+
                         </tr>
                     @endforeach
                     </tbody>

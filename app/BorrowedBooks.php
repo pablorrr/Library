@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class BorrowedBooks extends Model
 {
+    public $timestamps = false;
     public $fillable = ['user_id', 'book_id', 'amount'];
 
     public function books(): \Illuminate\Database\Eloquent\Relations\HasOne

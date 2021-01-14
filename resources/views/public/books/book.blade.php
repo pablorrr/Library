@@ -39,7 +39,7 @@
                 <th scope="row">{{$singleBook->id}}</th>
                 <td>{{$singleBook->title}}</td>
                 <td>{{$singleBook->author}}</td>
-                <td><a href="{{route('book.rent',$singleBook->id)}}"
+                <td><a href="{{route('admin.book.rent',[$singleBook->id,auth()->user()->id])}}"
                        class="btn btn-primary btn-sm">{{$singleBook->status}}</a></td>
 
             </tr>

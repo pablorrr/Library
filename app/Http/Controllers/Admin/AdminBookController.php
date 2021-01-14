@@ -12,7 +12,7 @@ class AdminBookController extends Controller
 {
     public function index()
     {
-        $books = Book::all()->sortKeysDesc();
+        $books = Book::orderBy('title','asc')->get();
         return view('admin/dashboard/tables/book-table', ['books' => $books]);
     }
 

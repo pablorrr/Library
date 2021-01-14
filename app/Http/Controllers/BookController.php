@@ -18,7 +18,8 @@ class BookController extends Controller
     {
 
 
-        $books = Book::filterBy($filters)->get();
+        $books = Book::filterBy($filters)->orderBy('title','asc')->get();
+        //$booksCount = Book::filterBy($filters)->get();
         return view('public/books/book', ['books' => $books]);
     }
 

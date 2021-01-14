@@ -12,7 +12,7 @@ class AdminBorrowedController extends Controller
 {
     public function index()
     {
-        $borrowed = BorrowedBooks::all();
+        $borrowed = BorrowedBooks::orderBy('user_id','asc')->get();
         return view('admin/dashboard/tables/borrowed-table', ['borrowed' => $borrowed]);
     }
 

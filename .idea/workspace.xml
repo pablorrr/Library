@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89c886be-f3af-41cc-bf37-e3c5374215f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/QueryFilters/BookFilters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/query_filters.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Library.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBookController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/public/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/layout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +177,7 @@
       <workItem from="1610279736338" duration="12371000" />
       <workItem from="1610355843263" duration="19113000" />
       <workItem from="1610610664015" duration="800000" />
-      <workItem from="1610613042397" duration="5593000" />
+      <workItem from="1610613042397" duration="6874000" />
     </task>
     <task id="LOCAL-00001" summary="add new files create first route and blade  templates">
       <created>1608901139286</created>
@@ -361,14 +354,20 @@
       <option name="project" value="LOCAL" />
       <updated>1610611428157</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add filter search in books - cerbero">
+      <created>1610619003922</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1610619003922</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add new files create first route and blade  templates" />
     <MESSAGE value="add controllers and change route with controllers" />
     <MESSAGE value="prepare tables and views" />
     <MESSAGE value="succesfull return db values on views" />
@@ -393,7 +392,8 @@
     <MESSAGE value="add show method to borrowed controller" />
     <MESSAGE value="add edit book method and  linking buttons" />
     <MESSAGE value="add buttons to main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add buttons to main page" />
+    <MESSAGE value="add filter search in books - cerbero" />
+    <option name="LAST_COMMIT_MESSAGE" value="add filter search in books - cerbero" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

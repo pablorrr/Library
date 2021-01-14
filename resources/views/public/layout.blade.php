@@ -43,10 +43,17 @@
             @endif
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-item">
-                    <form action="{{ route('book') }}" method="GET">
-                        <input class="form-control" placeholder="Szukaj" name="title" type="text">
-                        <button type="submit" class="btn">Szukaj</button>
-                    </form>
+                    <article class="card-group-item">
+                        <div class="card-body">
+                            <form action="{{ route('book') }}" method="GET">
+                                <input class="form-control" placeholder="Szukaj" name="title" type="text"value="{{ Request::input('title') }}">
+                                @if ($errors->has('title'))
+                                    <div class="badge badge-danger">{{ $errors->first('title') }}</div>
+                                @endif
+                                <button type="submit" class="btn">Szukaj</button>
+                            </form>
+                        </div>
+                    </article>
                 </li>
                 <!-- Authentication Links -->
                 @guest

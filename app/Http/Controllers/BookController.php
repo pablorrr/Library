@@ -19,8 +19,9 @@ class BookController extends Controller
 
 
         $books = Book::filterBy($filters)->orderBy('title','asc')->paginate(3);
+        $booksCount = Book::count();
 
-        return view('public/books/book', ['books' => $books]);
+        return view('public/books/book', compact('books','booksCount'));
     }
 
 

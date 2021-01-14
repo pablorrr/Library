@@ -55,6 +55,8 @@ Route::group([
     Route::post('/book', 'Admin\AdminBookController@store')->name('book.store');
     Route::put('/book/{book}', 'Admin\AdminBookController@update')->name('book.update');
     Route::get('/{book}/destroy', 'Admin\AdminBookController@destroy')->name('book.destroy');
+    Route::get('/settings', 'Admin\AdminSettingsController@index')->name('user.settings');
+    Route::put('/settings', 'Admin\AdminSettingsController@update')->name('user.update');
 
 
 });

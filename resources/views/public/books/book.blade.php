@@ -89,8 +89,13 @@
         </tbody>
     </table>
     <div class="row">
-        <div class="col-12">
+        <div class="col-12 d-flex justify-content-center">
             {{$books->links()}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p class="d-flex justify-content-center">Books count : {{$booksCount}} </p>
         </div>
     </div>
 @endsection

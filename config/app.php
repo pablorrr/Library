@@ -174,6 +174,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        //cerbero obsluga filtrowania
+        Cerbero\QueryFilters\Providers\QueryFiltersServiceProvider::class,
 
     ],
 

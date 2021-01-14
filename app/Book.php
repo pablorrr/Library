@@ -3,9 +3,12 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Cerbero\QueryFilters\FiltersRecords;
 
 class Book extends Model
 {
+    use FiltersRecords;
+
     public $timestamps = false;
     public $fillable = ['id', 'title', 'author'];
 

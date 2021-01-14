@@ -42,6 +42,12 @@
                 </ul>
             @endif
             <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <form action="{{ route('book') }}" method="GET">
+                        <input class="form-control" placeholder="Szukaj" name="title" type="text">
+                        <button type="submit" class="btn">Szukaj</button>
+                    </form>
+                </li>
                 <!-- Authentication Links -->
                 @guest
                     <li class="nav-item">
@@ -73,6 +79,7 @@
                         </div>
                     </li>
                 @endguest
+
             </ul>
         </div>
     </div>

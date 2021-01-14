@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Book;
+//use App\Http\Requests\FilterProducts;
+use App\QueryFilters\BookFilters;
 use Illuminate\Http\Request;
 
 class BookController extends Controller
@@ -12,28 +14,25 @@ class BookController extends Controller
         $this->middleware('auth');
     }
 
-    public function index()
+    public function index(BookFilters $filters)
     {
 
-        $books = Book::all()->sortKeysDesc();
+
+        $books = Book::filterBy($filters)->get();
         return view('public/books/book', ['books' => $books]);
     }
-
-
 
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
         //
     }
-
-
 
 
 }

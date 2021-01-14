@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89c886be-f3af-41cc-bf37-e3c5374215f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/QueryFilters/BookFilters.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/query_filters.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Library.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Book.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/tables/book-table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard/tables/book-table.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/tables/show-book-table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard/tables/show-book-table.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/public/books/book.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/books/book.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/layout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +121,7 @@
       <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
       <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
       <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/cerbero/query-filters" />
     </include_path>
   </component>
   <component name="ProjectId" id="1m9KPlZrbP63QVjB4BHsMfmqTP2" />
@@ -130,18 +135,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/dashboard/tables" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="de.espend.idea.laravel.ui.TemplateSettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Laravel\Library\app" />
       <recent name="C:\Laravel\Library\resources\views\admin\dashboard\tables" />
       <recent name="C:\Laravel\Library\resources\views\public\books" />
       <recent name="C:\Laravel\Library\resources\views\auth\passwords" />
       <recent name="C:\Laravel\Library\resources\views\auth" />
-      <recent name="C:\Laravel\Library\resources\views\admin\dashboard\tables\turned" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Laravel\Library\resources\views\admin\dashboard\tables" />
@@ -178,7 +183,8 @@
       <workItem from="1610268640639" duration="7916000" />
       <workItem from="1610279736338" duration="12371000" />
       <workItem from="1610355843263" duration="19113000" />
-      <workItem from="1610610664015" duration="662000" />
+      <workItem from="1610610664015" duration="800000" />
+      <workItem from="1610613042397" duration="5593000" />
     </task>
     <task id="LOCAL-00001" summary="add new files create first route and blade  templates">
       <created>1608901139286</created>
@@ -348,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610375124442</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="add buttons to main page">
+      <created>1610611428157</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1610611428157</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +392,8 @@
     <MESSAGE value="add show method to book controller" />
     <MESSAGE value="add show method to borrowed controller" />
     <MESSAGE value="add edit book method and  linking buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="add edit book method and  linking buttons" />
+    <MESSAGE value="add buttons to main page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add buttons to main page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -6,6 +6,17 @@
 
     {{--czesc procesu autentykacji-- za pozyczone z home. blade--}}
     <div class="container">
+        @if (session('status'))
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-{{ session('status')['type'] }}">
+                            {{ session('status')['content'] }}
+                        </div>
+                    </div>
+                </div>
+
+        @endif
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -34,17 +45,22 @@
         </tr>
         </thead>
         <tbody>
+
         @foreach($books as $singleBook)
             <tr>
                 <th scope="row">{{$singleBook->id}}</th>
                 <td>{{$singleBook->title}}</td>
                 <td>{{$singleBook->author}}</td>
                 <td><a href="{{route('admin.book.rent',[$singleBook->id,auth()->user()->id])}}"
-                       class="btn btn-primary btn-sm">{{$singleBook->status}}</a></td>
+                       class="btn btn-primary btn-sm">{{$singleBook->status}}</a>
+                </td>
 
             </tr>
+
         @endforeach
         </tbody>
+
+
     </table>
     <div class="row">
         <div class="col-12 d-flex justify-content-center">
@@ -56,17 +72,5 @@
             <p class="d-flex justify-content-center">Books count : {{$booksCount}} </p>
         </div>
     </div>
-    <?php
-     //   use App\BorrowedBooks;
-    //$checkBook = BorrowedBooks::findOrFail(20);
-    //dd( $checkBook->user_id);
-  //  dd( $checkBook->book_id);
-    //$checkBook = BorrowedBooks::all();
-   // foreach ($checkBook as $singleCheckBook) {
-
-       // dd( $singleCheckBook->user_id);
-      //  dd( $singleCheckBook->book_id);
-       // }
-    ?>
 @endsection
 

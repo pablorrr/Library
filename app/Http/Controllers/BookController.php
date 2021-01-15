@@ -26,5 +26,10 @@ class BookController extends Controller
         return view('public/books/book', compact('books', 'booksCount'));
     }
 
+    public function errorPage()
+    {
+        return view('public.error');
+    }
+
 
 }

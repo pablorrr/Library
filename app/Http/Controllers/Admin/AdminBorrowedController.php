@@ -14,7 +14,7 @@ class AdminBorrowedController extends Controller
     public function index()
     {
         $borrowed = BorrowedBooks::orderBy('user_id', 'asc')->get();
-        return view('admin/dashboard/tables/borrowed-table', ['borrowed' => $borrowed]);
+        return view('admin/dashboard/tables/borrowed-table', compact('borrowed'));
     }
 
     public function showUser($user_id)
@@ -34,27 +34,28 @@ class AdminBorrowedController extends Controller
     public function rent($book_id, $user_id)
     {
         $book = Book::findOrFail($book_id);
-
-        if ($book->status != 'give back' && $book->status == 'rent') {
+        //borrow
+        if ($book->status != 'give back') {
 
             Book::where('id', $book_id)->update(array('status' => 'give back'));
             BorrowedBooks::insert(['user_id' => $user_id, 'book_id' => $book_id]);
 
-
-        } elseif ($book->status != 'rent' && $book->status == 'give back') {
+            //give back
+        } elseif ($book->status != 'rent') {
 
             $checkBook = BorrowedBooks::all();
-
             foreach ($checkBook as $singleCheckBook) {
                 //user nie moze oddac ksizki ktorej nie wypozyczyłł!!!!:):):)
                 if ($singleCheckBook->user_id == $user_id) {
-                    Book::where('id','=', $book_id)->update(array('status' => 'rent'));
+                    Book::where('id', '=', $book_id)->update(array('status' => 'rent'));
                     BorrowedBooks::where('user_id', '=', $user_id)->where('book_id', '=', $book_id)->delete();
                 }
-
             }//foreach
         }//elseif
 
         return redirect('/');
     }
+
+
+
 }

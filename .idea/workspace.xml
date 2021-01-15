@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="89c886be-f3af-41cc-bf37-e3c5374215f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBookController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBorrowedController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBorrowedController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/public/books/book.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/books/book.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,25 +136,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/dashboard/tables" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="de.espend.idea.laravel.ui.TemplateSettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Laravel\Library\resources\views\public" />
       <recent name="C:\Laravel\Library\resources\views\admin\dashboard\tables" />
       <recent name="C:\Laravel\Library\app" />
       <recent name="C:\Laravel\Library\resources\views\public\books" />
       <recent name="C:\Laravel\Library\resources\views\auth\passwords" />
-      <recent name="C:\Laravel\Library\resources\views\auth" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Laravel\Library\resources\views\admin" />
       <recent name="C:\Laravel\Library\resources\views\admin\dashboard" />
       <recent name="C:\Laravel\Library\resources\views\admin\dashboard\tables" />
       <recent name="C:\Laravel\Library\resources\views\public\books" />
       <recent name="C:\Laravel\Library\resources\views\public" />
-      <recent name="C:\Laravel\Library\public\sbadmin" />
     </key>
   </component>
   <component name="RunManager">
@@ -186,7 +188,7 @@
       <workItem from="1610610664015" duration="800000" />
       <workItem from="1610613042397" duration="9060000" />
       <workItem from="1610626156746" duration="5369000" />
-      <workItem from="1610701610076" duration="4546000" />
+      <workItem from="1610701610076" duration="16548000" />
     </task>
     <task id="LOCAL-00001" summary="add new files create first route and blade  templates">
       <created>1608901139286</created>
@@ -398,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610652587149</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fix problem z odddawaniem ksizki przez innego usera">
+      <created>1610706287512</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1610706287512</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +426,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add css and js to template directory" />
     <MESSAGE value="transform routes into groups with prefix" />
     <MESSAGE value="first admin panel implementation" />
     <MESSAGE value="work under admin pages" />
@@ -442,7 +450,8 @@
     <MESSAGE value="add pagination" />
     <MESSAGE value="status rent first step" />
     <MESSAGE value="problem z oddawaniem ksiazki  przez usera ktry jej nie pozyczył" />
-    <option name="LAST_COMMIT_MESSAGE" value="problem z oddawaniem ksiazki  przez usera ktry jej nie pozyczył" />
+    <MESSAGE value="fix problem z odddawaniem ksizki przez innego usera" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix problem z odddawaniem ksizki przez innego usera" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

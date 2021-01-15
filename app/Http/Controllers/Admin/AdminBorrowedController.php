@@ -36,20 +36,25 @@ class AdminBorrowedController extends Controller
         $book = Book::findOrFail($book_id);
 
         if ($book->status != 'give back' && $book->status == 'rent') {
-           // $checkBook =  BorrowedBooks::findOrFail($user_id);
-            //if($checkBook->user_id != $user_id ) return;
+
             Book::where('id', $book_id)->update(array('status' => 'give back'));
-            BorrowedBooks::insert(['user_id' => $user_id, 'book_id' => $book_id
-            ]);
-            return redirect('/');
+            BorrowedBooks::insert(['user_id' => $user_id, 'book_id' => $book_id]);
+
 
         } elseif ($book->status != 'rent' && $book->status == 'give back') {
-            Book::where('id', $book_id)->update(array('status' => 'rent'));
-            BorrowedBooks::where('user_id', '=', $user_id)->where('book_id', '=', $book_id)->delete();
 
-            return redirect('/');
-        }
+            $checkBook = BorrowedBooks::all();
 
+            foreach ($checkBook as $singleCheckBook) {
+                //user nie moze oddac ksizki ktorej nie wypozyczyłł!!!!:):):)
+                if ($singleCheckBook->user_id == $user_id) {
+                    Book::where('id','=', $book_id)->update(array('status' => 'rent'));
+                    BorrowedBooks::where('user_id', '=', $user_id)->where('book_id', '=', $book_id)->delete();
+                }
+
+            }//foreach
+        }//elseif
+
+        return redirect('/');
     }
-
 }

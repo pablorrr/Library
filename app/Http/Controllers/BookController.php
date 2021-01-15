@@ -20,7 +20,7 @@ class BookController extends Controller
     {
 
 
-        $books = Book::filterBy($filters)->orderBy('id', 'asc')->paginate(3);
+        $books = Book::filterBy($filters)->orderBy('id', 'asc')->paginate(10);
         $booksCount = Book::count();
 
         return view('public/books/book', compact('books', 'booksCount'));

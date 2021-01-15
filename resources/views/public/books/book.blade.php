@@ -56,5 +56,17 @@
             <p class="d-flex justify-content-center">Books count : {{$booksCount}} </p>
         </div>
     </div>
+    <?php
+     //   use App\BorrowedBooks;
+    //$checkBook = BorrowedBooks::findOrFail(20);
+    //dd( $checkBook->user_id);
+  //  dd( $checkBook->book_id);
+    //$checkBook = BorrowedBooks::all();
+   // foreach ($checkBook as $singleCheckBook) {
+
+       // dd( $singleCheckBook->user_id);
+      //  dd( $singleCheckBook->book_id);
+       // }
+    ?>
 @endsection
 

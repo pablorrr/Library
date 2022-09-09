@@ -35,7 +35,7 @@ class AdminBorrowedController extends Controller
     {
         $book = Book::findOrFail($book_id);
         //borrow
-        if ($book->status != 'give back') {
+        if ((string)$book->status != 'give back') {
 
             Book::where('id', $book_id)->update(array('status' => 'give back'));
             BorrowedBooks::insert(['user_id' => $user_id, 'book_id' => $book_id]);

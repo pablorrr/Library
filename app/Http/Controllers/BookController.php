@@ -18,8 +18,6 @@ class BookController extends Controller
 
     public function index(BookFilters $filters)
     {
-
-
         $books = Book::filterBy($filters)->orderBy('id', 'asc')->paginate(10);
         $booksCount = Book::count();
 

@@ -12,6 +12,9 @@
 */
 
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 Auth::routes();
 
 Route::get('/', 'BookController@index')->name('book');
@@ -60,7 +63,6 @@ Route::group([
     Route::put('/settings', 'Admin\AdminSettingsController@update')->name('user.update');
     //rent
     Route::get('/book-rent/{book}{user}', 'Admin\AdminBorrowedController@rent')->name('book.rent');
-
 
 });
 
